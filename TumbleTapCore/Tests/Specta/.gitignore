@@ -1,0 +1,11 @@
+.DS_Store
+*.xcworkspace
+xcuserdata
+.idea
+build/
+*.pbxuser
+*.mode1v3
+products/README.md
+products/LICENSE
+products/.gitkeep
+

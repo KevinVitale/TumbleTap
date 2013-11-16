@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A021BFD18381A8600555956 /* SKLabelNode+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A021BFB18381A8600555956 /* SKLabelNode+Core.h */; };
+		0A021BFE18381A8600555956 /* SKLabelNode+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A021BFC18381A8600555956 /* SKLabelNode+Core.m */; };
+		0A021BFF18381A8600555956 /* SKLabelNode+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A021BFC18381A8600555956 /* SKLabelNode+Core.m */; };
+		0A0E328D1839506800DA63A6 /* SKShapeNode+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0E328B1839506800DA63A6 /* SKShapeNode+Core.h */; };
+		0A0E328E1839506800DA63A6 /* SKShapeNode+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E328C1839506800DA63A6 /* SKShapeNode+Core.m */; };
+		0A0E328F1839506800DA63A6 /* SKShapeNode+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E328C1839506800DA63A6 /* SKShapeNode+Core.m */; };
+		0A1B98861838729A001097F0 /* NSString+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1B98841838729A001097F0 /* NSString+Core.h */; };
+		0A1B98871838729A001097F0 /* NSString+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B98851838729A001097F0 /* NSString+Core.m */; };
+		0A1B98881838729A001097F0 /* NSString+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B98851838729A001097F0 /* NSString+Core.m */; };
+		0A352B2C1837273D00CE55BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A352B2B1837273D00CE55BB /* Cocoa.framework */; };
+		0A352B361837273D00CE55BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A352B341837273D00CE55BB /* InfoPlist.strings */; };
+		0A8A683B18380A3C007D5165 /* TTCBaseScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8A683918380A3C007D5165 /* TTCBaseScene.h */; };
+		0A8A683C18380A3C007D5165 /* TTCBaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A683A18380A3C007D5165 /* TTCBaseScene.m */; };
+		0A8A683D18380A3C007D5165 /* TTCBaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A683A18380A3C007D5165 /* TTCBaseScene.m */; };
+		0A9EBB741843A8CE0019DF76 /* SKAction+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9EBB721843A8CE0019DF76 /* SKAction+Core.h */; };
+		0A9EBB751843A8CE0019DF76 /* SKAction+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EBB731843A8CE0019DF76 /* SKAction+Core.m */; };
+		0A9EBB761843A8CE0019DF76 /* SKAction+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EBB731843A8CE0019DF76 /* SKAction+Core.m */; };
+		0AC61EA8183732D4007C9F70 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A352B401837273D00CE55BB /* XCTest.framework */; };
+		0AC61EB718373359007C9F70 /* CoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A352BF418372DE600CE55BB /* CoreTests.m */; };
+		0AC61EB8183733A6007C9F70 /* TumbleTapCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A352B381837273D00CE55BB /* TumbleTapCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AC61EB9183734C4007C9F70 /* TumbleTapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A352B281837273D00CE55BB /* TumbleTapCore.framework */; };
+		0AC61EBF1837389D007C9F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A352B81183727BE00CE55BB /* Foundation.framework */; };
+		0AC61EE5183738CE007C9F70 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A352B401837273D00CE55BB /* XCTest.framework */; };
+		0AC61EE6183738CE007C9F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A352B81183727BE00CE55BB /* Foundation.framework */; };
+		0AC61EE7183738CE007C9F70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A352B91183727BE00CE55BB /* UIKit.framework */; };
+		0AC61EF618373996007C9F70 /* CoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A352BF418372DE600CE55BB /* CoreTests.m */; };
+		0AC61EF7183739A3007C9F70 /* libTumbleTapCore-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC61EBE1837389D007C9F70 /* libTumbleTapCore-iOS.a */; };
+		0AD27984183C953B00C37523 /* NSNumber+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD27982183C953B00C37523 /* NSNumber+Core.h */; };
+		0AD27985183C953B00C37523 /* NSNumber+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD27983183C953B00C37523 /* NSNumber+Core.m */; };
+		0AD27986183C953B00C37523 /* NSNumber+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD27983183C953B00C37523 /* NSNumber+Core.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AC61EB2183732D4007C9F70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A8A67B61837181F007D5165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A352B271837273D00CE55BB;
+			remoteInfo = TumbleTapCore;
+		};
+		0AC61EF1183738CE007C9F70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A8A67B61837181F007D5165 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AC61EBD1837389D007C9F70;
+			remoteInfo = "TumbleTapCore-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AC61EBC1837389D007C9F70 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A021BFB18381A8600555956 /* SKLabelNode+Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKLabelNode+Core.h"; sourceTree = "<group>"; };
+		0A021BFC18381A8600555956 /* SKLabelNode+Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKLabelNode+Core.m"; sourceTree = "<group>"; };
+		0A0E328B1839506800DA63A6 /* SKShapeNode+Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKShapeNode+Core.h"; sourceTree = "<group>"; };
+		0A0E328C1839506800DA63A6 /* SKShapeNode+Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKShapeNode+Core.m"; sourceTree = "<group>"; };
+		0A1B98841838729A001097F0 /* NSString+Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Core.h"; sourceTree = "<group>"; };
+		0A1B98851838729A001097F0 /* NSString+Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Core.m"; sourceTree = "<group>"; };
+		0A352B281837273D00CE55BB /* TumbleTapCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TumbleTapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A352B2B1837273D00CE55BB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0A352B2E1837273D00CE55BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A352B2F1837273D00CE55BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0A352B301837273D00CE55BB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0A352B331837273D00CE55BB /* TumbleTapCore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TumbleTapCore-Info.plist"; sourceTree = "<group>"; };
+		0A352B351837273D00CE55BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A352B371837273D00CE55BB /* TumbleTapCore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TumbleTapCore-Prefix.pch"; sourceTree = "<group>"; };
+		0A352B381837273D00CE55BB /* TumbleTapCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TumbleTapCore.h; sourceTree = "<group>"; };
+		0A352B401837273D00CE55BB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0A352B81183727BE00CE55BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A352B91183727BE00CE55BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A352BC518372A9E00CE55BB /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		0A352BC718372AA700CE55BB /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SpriteKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A352BF418372DE600CE55BB /* CoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTests.m; sourceTree = "<group>"; };
+		0A8A683918380A3C007D5165 /* TTCBaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCBaseScene.h; sourceTree = "<group>"; };
+		0A8A683A18380A3C007D5165 /* TTCBaseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCBaseScene.m; sourceTree = "<group>"; };
+		0A9EBB721843A8CE0019DF76 /* SKAction+Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+Core.h"; sourceTree = "<group>"; };
+		0A9EBB731843A8CE0019DF76 /* SKAction+Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+Core.m"; sourceTree = "<group>"; };
+		0AC61EA7183732D4007C9F70 /* OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC61EBE1837389D007C9F70 /* libTumbleTapCore-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTumbleTapCore-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC61EE4183738CD007C9F70 /* iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD27982183C953B00C37523 /* NSNumber+Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Core.h"; sourceTree = "<group>"; };
+		0AD27983183C953B00C37523 /* NSNumber+Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Core.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A352B241837273D00CE55BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A352B2C1837273D00CE55BB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC61EA4183732D4007C9F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC61EB9183734C4007C9F70 /* TumbleTapCore.framework in Frameworks */,
+				0AC61EA8183732D4007C9F70 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC61EBB1837389D007C9F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC61EBF1837389D007C9F70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC61EE1183738CD007C9F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC61EE6183738CE007C9F70 /* Foundation.framework in Frameworks */,
+				0AC61EE5183738CE007C9F70 /* XCTest.framework in Frameworks */,
+				0AC61EE7183738CE007C9F70 /* UIKit.framework in Frameworks */,
+				0AC61EF7183739A3007C9F70 /* libTumbleTapCore-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A021C0018381A8A00555956 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B98841838729A001097F0 /* NSString+Core.h */,
+				0A1B98851838729A001097F0 /* NSString+Core.m */,
+				0AD27982183C953B00C37523 /* NSNumber+Core.h */,
+				0AD27983183C953B00C37523 /* NSNumber+Core.m */,
+				0A021BFB18381A8600555956 /* SKLabelNode+Core.h */,
+				0A021BFC18381A8600555956 /* SKLabelNode+Core.m */,
+				0A0E328B1839506800DA63A6 /* SKShapeNode+Core.h */,
+				0A0E328C1839506800DA63A6 /* SKShapeNode+Core.m */,
+				0A9EBB721843A8CE0019DF76 /* SKAction+Core.h */,
+				0A9EBB731843A8CE0019DF76 /* SKAction+Core.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		0A352B291837273D00CE55BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A352B281837273D00CE55BB /* TumbleTapCore.framework */,
+				0AC61EA7183732D4007C9F70 /* OS X Tests.xctest */,
+				0AC61EBE1837389D007C9F70 /* libTumbleTapCore-iOS.a */,
+				0AC61EE4183738CD007C9F70 /* iOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A352B2A1837273D00CE55BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A352BC718372AA700CE55BB /* SpriteKit.framework */,
+				0A352BC518372A9E00CE55BB /* SpriteKit.framework */,
+				0A352B2B1837273D00CE55BB /* Cocoa.framework */,
+				0A352B401837273D00CE55BB /* XCTest.framework */,
+				0A352B81183727BE00CE55BB /* Foundation.framework */,
+				0A352B91183727BE00CE55BB /* UIKit.framework */,
+				0A352B2D1837273D00CE55BB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A352B2D1837273D00CE55BB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A352B2E1837273D00CE55BB /* Foundation.framework */,
+				0A352B2F1837273D00CE55BB /* CoreData.framework */,
+				0A352B301837273D00CE55BB /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0A352B311837273D00CE55BB /* TumbleTapCore */ = {
+			isa = PBXGroup;
+			children = (
+				0A352B381837273D00CE55BB /* TumbleTapCore.h */,
+				0A021C0018381A8A00555956 /* Categories */,
+				0A8A683E18380A43007D5165 /* Views */,
+				0A352B321837273D00CE55BB /* Supporting Files */,
+			);
+			path = TumbleTapCore;
+			sourceTree = "<group>";
+		};
+		0A352B321837273D00CE55BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A352B331837273D00CE55BB /* TumbleTapCore-Info.plist */,
+				0A352B341837273D00CE55BB /* InfoPlist.strings */,
+				0A352B371837273D00CE55BB /* TumbleTapCore-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A352BF318372DC500CE55BB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A352BF418372DE600CE55BB /* CoreTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0A8A67B51837181F007D5165 = {
+			isa = PBXGroup;
+			children = (
+				0A352B311837273D00CE55BB /* TumbleTapCore */,
+				0A352BF318372DC500CE55BB /* Tests */,
+				0A352B2A1837273D00CE55BB /* Frameworks */,
+				0A352B291837273D00CE55BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A8A683E18380A43007D5165 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A8A683918380A3C007D5165 /* TTCBaseScene.h */,
+				0A8A683A18380A3C007D5165 /* TTCBaseScene.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A352B251837273D00CE55BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC61EB8183733A6007C9F70 /* TumbleTapCore.h in Headers */,
+				0A1B98861838729A001097F0 /* NSString+Core.h in Headers */,
+				0A0E328D1839506800DA63A6 /* SKShapeNode+Core.h in Headers */,
+				0A9EBB741843A8CE0019DF76 /* SKAction+Core.h in Headers */,
+				0AD27984183C953B00C37523 /* NSNumber+Core.h in Headers */,
+				0A8A683B18380A3C007D5165 /* TTCBaseScene.h in Headers */,
+				0A021BFD18381A8600555956 /* SKLabelNode+Core.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A352B271837273D00CE55BB /* TumbleTapCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A352B521837273D00CE55BB /* Build configuration list for PBXNativeTarget "TumbleTapCore" */;
+			buildPhases = (
+				0A352B231837273D00CE55BB /* Sources */,
+				0A352B241837273D00CE55BB /* Frameworks */,
+				0A352B251837273D00CE55BB /* Headers */,
+				0A352B261837273D00CE55BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TumbleTapCore;
+			productName = TumbleTapCore;
+			productReference = 0A352B281837273D00CE55BB /* TumbleTapCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0AC61EA6183732D4007C9F70 /* OS X Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC61EB4183732D4007C9F70 /* Build configuration list for PBXNativeTarget "OS X Tests" */;
+			buildPhases = (
+				0AC61EA3183732D4007C9F70 /* Sources */,
+				0AC61EA4183732D4007C9F70 /* Frameworks */,
+				0AC61EA5183732D4007C9F70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AC61EB3183732D4007C9F70 /* PBXTargetDependency */,
+			);
+			name = "OS X Tests";
+			productName = "OS X Tests";
+			productReference = 0AC61EA7183732D4007C9F70 /* OS X Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0AC61EBD1837389D007C9F70 /* TumbleTapCore-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC61EDA1837389E007C9F70 /* Build configuration list for PBXNativeTarget "TumbleTapCore-iOS" */;
+			buildPhases = (
+				0AC61EBA1837389D007C9F70 /* Sources */,
+				0AC61EBB1837389D007C9F70 /* Frameworks */,
+				0AC61EBC1837389D007C9F70 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TumbleTapCore-iOS";
+			productName = "TumbleTapCore-iOS";
+			productReference = 0AC61EBE1837389D007C9F70 /* libTumbleTapCore-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0AC61EE3183738CD007C9F70 /* iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC61EF3183738CE007C9F70 /* Build configuration list for PBXNativeTarget "iOS Tests" */;
+			buildPhases = (
+				0AC61EE0183738CD007C9F70 /* Sources */,
+				0AC61EE1183738CD007C9F70 /* Frameworks */,
+				0AC61EE2183738CD007C9F70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AC61EF2183738CE007C9F70 /* PBXTargetDependency */,
+			);
+			name = "iOS Tests";
+			productName = "iOS Tests";
+			productReference = 0AC61EE4183738CD007C9F70 /* iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A8A67B61837181F007D5165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					0AC61EA6183732D4007C9F70 = {
+						TestTargetID = 0A352B271837273D00CE55BB;
+					};
+					0AC61EE3183738CD007C9F70 = {
+						TestTargetID = 0AC61EBD1837389D007C9F70;
+					};
+				};
+			};
+			buildConfigurationList = 0A8A67B91837181F007D5165 /* Build configuration list for PBXProject "TumbleTapCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A8A67B51837181F007D5165;
+			productRefGroup = 0A352B291837273D00CE55BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A352B271837273D00CE55BB /* TumbleTapCore */,
+				0AC61EBD1837389D007C9F70 /* TumbleTapCore-iOS */,
+				0AC61EA6183732D4007C9F70 /* OS X Tests */,
+				0AC61EE3183738CD007C9F70 /* iOS Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A352B261837273D00CE55BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A352B361837273D00CE55BB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC61EA5183732D4007C9F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC61EE2183738CD007C9F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A352B231837273D00CE55BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9EBB751843A8CE0019DF76 /* SKAction+Core.m in Sources */,
+				0A8A683C18380A3C007D5165 /* TTCBaseScene.m in Sources */,
+				0A1B98871838729A001097F0 /* NSString+Core.m in Sources */,
+				0AD27985183C953B00C37523 /* NSNumber+Core.m in Sources */,
+				0A0E328E1839506800DA63A6 /* SKShapeNode+Core.m in Sources */,
+				0A021BFE18381A8600555956 /* SKLabelNode+Core.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC61EA3183732D4007C9F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC61EB718373359007C9F70 /* CoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC61EBA1837389D007C9F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9EBB761843A8CE0019DF76 /* SKAction+Core.m in Sources */,
+				0A8A683D18380A3C007D5165 /* TTCBaseScene.m in Sources */,
+				0A1B98881838729A001097F0 /* NSString+Core.m in Sources */,
+				0AD27986183C953B00C37523 /* NSNumber+Core.m in Sources */,
+				0A0E328F1839506800DA63A6 /* SKShapeNode+Core.m in Sources */,
+				0A021BFF18381A8600555956 /* SKLabelNode+Core.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC61EE0183738CD007C9F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC61EF618373996007C9F70 /* CoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AC61EB3183732D4007C9F70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A352B271837273D00CE55BB /* TumbleTapCore */;
+			targetProxy = 0AC61EB2183732D4007C9F70 /* PBXContainerItemProxy */;
+		};
+		0AC61EF2183738CE007C9F70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AC61EBD1837389D007C9F70 /* TumbleTapCore-iOS */;
+			targetProxy = 0AC61EF1183738CE007C9F70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A352B341837273D00CE55BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A352B351837273D00CE55BB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A352B4E1837273D00CE55BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TumbleTapCore/TumbleTapCore-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "TumbleTapCore/TumbleTapCore-Info.plist";
+				INSTALL_PATH = "@loader_path/../Frameworks/";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		0A352B4F1837273D00CE55BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TumbleTapCore/TumbleTapCore-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "TumbleTapCore/TumbleTapCore-Info.plist";
+				INSTALL_PATH = "@loader_path/../Frameworks/";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		0A8A67BA1837181F007D5165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		0A8A67BB1837181F007D5165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		0AC61EB5183732D4007C9F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TumbleTapCore.framework/Versions/A/TumbleTapCore";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/OS X Tests/OS X Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(PROJECT_DIR)/Tests/Specta/products\"",
+					"\"$(PROJECT_DIR)/Tests/Expecta/products\"",
+				);
+				INFOPLIST_FILE = "Tests/OS X Tests/OS X Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/Tests/Specta/products\"",
+					"\"$(PROJECT_DIR)/Tests/Expecta/products\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+					"-lSpecta-macosx",
+					"-lExpecta-macosx",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0AC61EB6183732D4007C9F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TumbleTapCore.framework/Versions/A/TumbleTapCore";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/OS X Tests/OS X Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(PROJECT_DIR)/Tests/Specta/products\"",
+					"\"$(PROJECT_DIR)/Tests/Expecta/products\"",
+				);
+				INFOPLIST_FILE = "Tests/OS X Tests/OS X Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/Tests/Specta/products\"",
+					"\"$(PROJECT_DIR)/Tests/Expecta/products\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+					"-lSpecta-macosx",
+					"-lExpecta-macosx",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		0AC61EDB1837389E007C9F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/TumbleTapCore_iOS.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TumbleTapCore/TumbleTapCore-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0AC61EDC1837389E007C9F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/TumbleTapCore_iOS.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TumbleTapCore/TumbleTapCore-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AC61EF4183738CE007C9F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/iOS Tests/iOS Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(PROJECT_DIR)/Tests/Specta/products\"",
+					"\"$(PROJECT_DIR)/Tests/Expecta/products\"",
+				);
+				INFOPLIST_FILE = "Tests/iOS Tests/iOS Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/Tests/Specta/products\"",
+					"\"$(PROJECT_DIR)/Tests/Expecta/products\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+					"-lSpecta-ios-universal",
+					"-lExpecta-ios-universal",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0AC61EF5183738CE007C9F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/iOS Tests/iOS Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(PROJECT_DIR)/Tests/Specta/products\"",
+					"\"$(PROJECT_DIR)/Tests/Expecta/products\"",
+				);
+				INFOPLIST_FILE = "Tests/iOS Tests/iOS Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(PROJECT_DIR)/Tests/Specta/products\"",
+					"\"$(PROJECT_DIR)/Tests/Expecta/products\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+					"-lSpecta-ios-universal",
+					"-lExpecta-ios-universal",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A352B521837273D00CE55BB /* Build configuration list for PBXNativeTarget "TumbleTapCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A352B4E1837273D00CE55BB /* Debug */,
+				0A352B4F1837273D00CE55BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8A67B91837181F007D5165 /* Build configuration list for PBXProject "TumbleTapCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8A67BA1837181F007D5165 /* Debug */,
+				0A8A67BB1837181F007D5165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AC61EB4183732D4007C9F70 /* Build configuration list for PBXNativeTarget "OS X Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC61EB5183732D4007C9F70 /* Debug */,
+				0AC61EB6183732D4007C9F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AC61EDA1837389E007C9F70 /* Build configuration list for PBXNativeTarget "TumbleTapCore-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC61EDB1837389E007C9F70 /* Debug */,
+				0AC61EDC1837389E007C9F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AC61EF3183738CE007C9F70 /* Build configuration list for PBXNativeTarget "iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC61EF4183738CE007C9F70 /* Debug */,
+				0AC61EF5183738CE007C9F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A8A67B61837181F007D5165 /* Project object */;
+}

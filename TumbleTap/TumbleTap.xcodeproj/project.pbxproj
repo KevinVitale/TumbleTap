@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A021C071838483200555956 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A021C041838483200555956 /* main.m */; };
+		0A021C081838483200555956 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A021C041838483200555956 /* main.m */; };
+		0A021C091838483200555956 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A021C061838483200555956 /* AppDelegate.m */; };
+		0A021C0A1838483200555956 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A021C061838483200555956 /* AppDelegate.m */; };
+		0A021C0E18384C0400555956 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A021C0C18384C0400555956 /* MainMenu.xib */; };
+		0A021C1A18384CA900555956 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A021C1618384CA900555956 /* Credits.rtf */; };
+		0A021C1B18384CA900555956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A021C1818384CA900555956 /* InfoPlist.strings */; };
+		0A1354A6185A7D3B00C6E0FC /* TumbleTapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1354A5185A7D3B00C6E0FC /* TumbleTapCore.framework */; };
+		0A1354A7185A7D4400C6E0FC /* TumbleTapCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A1354A5185A7D3B00C6E0FC /* TumbleTapCore.framework */; };
+		0A1354A9185A820900C6E0FC /* libTumbleTapCore-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1354A8185A820900C6E0FC /* libTumbleTapCore-iOS.a */; };
+		0A1B988318386770001097F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B98811838674B001097F0 /* Images.xcassets */; };
+		0AE6F6A1183883740061D54A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B987F1838674B001097F0 /* MainStoryboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A5A6A08183A991A0095F65B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A1354A7185A7D4400C6E0FC /* TumbleTapCore.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A021B4C1838172B00555956 /* TumbleTap-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TumbleTap-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A021B851838176900555956 /* TumbleTap-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TumbleTap-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A021C041838483200555956 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A021C051838483200555956 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A021C061838483200555956 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A021C0D18384C0400555956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "TumbleTap-OSX/Base.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		0A021C1718384CA900555956 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Credits.rtf; sourceTree = "<group>"; };
+		0A021C1918384CA900555956 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0A1354A5185A7D3B00C6E0FC /* TumbleTapCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TumbleTapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1354A8185A820900C6E0FC /* libTumbleTapCore-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libTumbleTapCore-iOS.a"; path = "../TumbleTapCore/build/Debug-iphoneos/libTumbleTapCore-iOS.a"; sourceTree = "<group>"; };
+		0A1B98801838674B001097F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0A1B98811838674B001097F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "TumbleTap-iOS/Images.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A021B491838172B00555956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1354A6185A7D3B00C6E0FC /* TumbleTapCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A021B821838176900555956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1354A9185A820900C6E0FC /* libTumbleTapCore-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A021B4D1838172B00555956 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A021B4C1838172B00555956 /* TumbleTap-OSX.app */,
+				0A021B851838176900555956 /* TumbleTap-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A021B4E1838172B00555956 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A1354A8185A820900C6E0FC /* libTumbleTapCore-iOS.a */,
+				0A1354A5185A7D3B00C6E0FC /* TumbleTapCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A021C0B1838483600555956 /* Shared Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0A021C041838483200555956 /* main.m */,
+				0A021C051838483200555956 /* AppDelegate.h */,
+				0A021C061838483200555956 /* AppDelegate.m */,
+			);
+			name = "Shared Sources";
+			sourceTree = "<group>";
+		};
+		0A021C1518384C6D00555956 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0A021C1618384CA900555956 /* Credits.rtf */,
+				0A021C1818384CA900555956 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = "TumbleTap-OSX/en.lproj";
+			sourceTree = SOURCE_ROOT;
+		};
+		0A021C1C18384CC000555956 /* OS X Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0A021C1518384C6D00555956 /* en.lproj */,
+				0A021C0C18384C0400555956 /* MainMenu.xib */,
+			);
+			name = "OS X Sources";
+			sourceTree = "<group>";
+		};
+		0A1B987E1838674B001097F0 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B987F1838674B001097F0 /* MainStoryboard.storyboard */,
+			);
+			name = Base.lproj;
+			path = "TumbleTap-iOS/Base.lproj";
+			sourceTree = "<group>";
+		};
+		0A1B98821838674F001097F0 /* iOS Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B987E1838674B001097F0 /* Base.lproj */,
+				0A1B98811838674B001097F0 /* Images.xcassets */,
+			);
+			name = "iOS Sources";
+			sourceTree = "<group>";
+		};
+		0A8A67AE18371649007D5165 = {
+			isa = PBXGroup;
+			children = (
+				0A1B98821838674F001097F0 /* iOS Sources */,
+				0A021C1C18384CC000555956 /* OS X Sources */,
+				0A021C0B1838483600555956 /* Shared Sources */,
+				0A021B4E1838172B00555956 /* Frameworks */,
+				0A021B4D1838172B00555956 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A021B4B1838172B00555956 /* TumbleTap-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A021B7F1838172B00555956 /* Build configuration list for PBXNativeTarget "TumbleTap-OSX" */;
+			buildPhases = (
+				0A021B481838172B00555956 /* Sources */,
+				0A021B491838172B00555956 /* Frameworks */,
+				0A021B4A1838172B00555956 /* Resources */,
+				0A5A6A08183A991A0095F65B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TumbleTap-OSX";
+			productName = "TumbleTap-OSX";
+			productReference = 0A021B4C1838172B00555956 /* TumbleTap-OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A021B841838176900555956 /* TumbleTap-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A021BAD1838176900555956 /* Build configuration list for PBXNativeTarget "TumbleTap-iOS" */;
+			buildPhases = (
+				0A021B811838176900555956 /* Sources */,
+				0A021B821838176900555956 /* Frameworks */,
+				0A021B831838176900555956 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TumbleTap-iOS";
+			productName = "TumbleTap-iOS";
+			productReference = 0A021B851838176900555956 /* TumbleTap-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A8A67AF18371649007D5165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					0A021B841838176900555956 = {
+						DevelopmentTeam = J3L2NJGMGJ;
+					};
+				};
+			};
+			buildConfigurationList = 0A8A67B218371649007D5165 /* Build configuration list for PBXProject "TumbleTap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A8A67AE18371649007D5165;
+			productRefGroup = 0A021B4D1838172B00555956 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A021B4B1838172B00555956 /* TumbleTap-OSX */,
+				0A021B841838176900555956 /* TumbleTap-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A021B4A1838172B00555956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A021C0E18384C0400555956 /* MainMenu.xib in Resources */,
+				0A021C1B18384CA900555956 /* InfoPlist.strings in Resources */,
+				0A021C1A18384CA900555956 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A021B831838176900555956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE6F6A1183883740061D54A /* MainStoryboard.storyboard in Resources */,
+				0A1B988318386770001097F0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A021B481838172B00555956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A021C091838483200555956 /* AppDelegate.m in Sources */,
+				0A021C071838483200555956 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A021B811838176900555956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A021C0A1838483200555956 /* AppDelegate.m in Sources */,
+				0A021C081838483200555956 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A021C0C18384C0400555956 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A021C0D18384C0400555956 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0A021C1618384CA900555956 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A021C1718384CA900555956 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0A021C1818384CA900555956 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A021C1918384CA900555956 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A1B987F1838674B001097F0 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A1B98801838674B001097F0 /* Base */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A021B7B1838172B00555956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TumbleTap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../TumbleTapCore/\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "TumbleTap-OSX/TumbleTap-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					TumbleTapCore,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A021B7C1838172B00555956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TumbleTap-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../TumbleTapCore/\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "TumbleTap-OSX/TumbleTap-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"-framework",
+					TumbleTapCore,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0A021BAE1838176900555956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TumbleTap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../TumbleTapCore/\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "TumbleTap-iOS/TumbleTap-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91c92a6f-950a-4f3e-a92e-8a9184bf07e3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A021BAF1838176900555956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TumbleTap-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../TumbleTapCore/\"",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "TumbleTap-iOS/TumbleTap-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91c92a6f-950a-4f3e-a92e-8a9184bf07e3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0A8A67B318371649007D5165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		0A8A67B418371649007D5165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A021B7F1838172B00555956 /* Build configuration list for PBXNativeTarget "TumbleTap-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A021B7B1838172B00555956 /* Debug */,
+				0A021B7C1838172B00555956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A021BAD1838176900555956 /* Build configuration list for PBXNativeTarget "TumbleTap-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A021BAE1838176900555956 /* Debug */,
+				0A021BAF1838176900555956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8A67B218371649007D5165 /* Build configuration list for PBXProject "TumbleTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8A67B318371649007D5165 /* Debug */,
+				0A8A67B418371649007D5165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A8A67AF18371649007D5165 /* Project object */;
+}
