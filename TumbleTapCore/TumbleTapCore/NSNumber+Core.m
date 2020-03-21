@@ -7,9 +7,11 @@
 //
 
 #import "NSNumber+Core.h"
+@import GameplayKit;
 
 @implementation NSNumber (Core)
 + (NSNumber *)randomNumberWithMininumInteger:(NSInteger)minimumInteger maximumInteger:(NSInteger)maximumInteger {
-    return [NSNumber numberWithInteger:(minimumInteger + arc4random() % (maximumInteger - minimumInteger))];
+    NSInteger integer = [[GKARC4RandomSource sharedRandom] nextIntWithUpperBound:maximumInteger] + minimumInteger;
+    return [NSNumber numberWithInteger:integer];
 }
 @end

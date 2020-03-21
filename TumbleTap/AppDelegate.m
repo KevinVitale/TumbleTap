@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TumbleTapCore/TumbleTapCore.h"
+#import "MyScene.h"
 
 @implementation AppDelegate
 #if TARGET_OS_IPHONE
@@ -22,20 +22,29 @@
         self.skView.showsNodeCount = YES;
         self.skView.showsDrawCount = YES;
 
-        TTCBaseScene *scene = [TTCBaseScene sceneWithSize:self.skView.frame.size];
+        TTCBaseScene *scene = [MyScene sceneWithSize:self.skView.frame.size];
         scene.scaleMode = SKSceneScaleModeResizeFill;
-        
+
         TTCBaseScene *__weak weakScene = scene;
         scene.inputBeganCallback = ^(NSSet *touches, SKEvent *event) {
             TTCBaseScene *strongScene = weakScene;
             void (^nodeSetupBlock)(SKNode *) = ^(SKNode *node) {
-                node.physicsBody.dynamic = YES;
-                node.physicsBody.affectedByGravity = YES;
-                node.physicsBody.velocity = CGVectorMake(0.f, 1000.f);
-                [node runAction:[SKAction sequenceActions:
-                                 [SKAction waitForDuration:2.5f],
-                                 [SKAction fadeAlphaTo:0.f duration:.25f],
-                                 [SKAction removeFromParent], nil]];
+                dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+                    ((SKShapeNode*)node).strokeColor = [SKColor colorWithRed:([NSNumber randomNumberWithMininumInteger:0 maximumInteger:255].floatValue / 255.f)
+                                                                       green:([NSNumber randomNumberWithMininumInteger:0 maximumInteger:255].floatValue / 255.f)
+                                                                        blue:([NSNumber randomNumberWithMininumInteger:0 maximumInteger:255].floatValue / 255.f)
+                                                                       alpha:1.0f];
+                    
+                    node.physicsBody.dynamic = YES;
+                    node.physicsBody.affectedByGravity = YES;
+                    node.physicsBody.velocity = CGVectorMake(0.f, 1000.f);
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [node runAction:[SKAction sequencedActions:
+                                         [SKAction waitForDuration:2.5f],
+                                         [SKAction fadeAlphaTo:0.f duration:.25f],
+                                         [SKAction removeFromParent], nil]];
+                    });
+                });
             };
             
 #if TARGET_OS_IPHONE
@@ -45,16 +54,27 @@
                            setupBlock:nodeSetupBlock];
             }
 #else
+             CGFloat size = 20.f; // <--: Set this size!
+
+            //------------------------------------------------------------------
             CGPoint position = (CGPoint)event.locationInWindow;
-            SKShapeNode *triangle = [SKShapeNode triangleShapeNode:20.f position:position addPhysics:YES];
-            [strongScene addChild:triangle
-                       setupBlock:nodeSetupBlock];
+            NSNumber *circleOrTriangle = [NSNumber randomNumberWithMininumInteger:0 maximumInteger:100];
+            //------------------------------------------------------------------
+            if (circleOrTriangle.integerValue <= 50) {
+                SKShapeNode *circle = [SKShapeNode circularShape:size * 0.3f position:position addPhysics:YES];
+                [strongScene addChild:circle.copy setupBlock:nodeSetupBlock];
+                [strongScene addChild:circle.copy setupBlock:nodeSetupBlock];
+            } else {
+                SKShapeNode *triangle = [SKShapeNode triangleShapeNode:size position:position addPhysics:YES];
+                [strongScene addChild:triangle.copy setupBlock:nodeSetupBlock];
+                [strongScene addChild:triangle.copy setupBlock:nodeSetupBlock];
+            }
+            //------------------------------------------------------------------
 #endif
             
         };
         scene.inputDraggedCallback = scene.inputBeganCallback;
-        
-        
+
         [self.skView presentScene:scene];
     }
     

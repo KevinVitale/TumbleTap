@@ -9,7 +9,7 @@
 #import "SKAction+Core.h"
 
 @implementation SKAction (Core)
-+ (instancetype)sequenceActions:(SKAction *)first, ... {
++ (instancetype)sequencedActions:(SKAction *)first, ... {
     va_list args;
     va_start(args, first);
     

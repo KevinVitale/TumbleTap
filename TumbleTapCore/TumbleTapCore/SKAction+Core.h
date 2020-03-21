@@ -9,5 +9,5 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface SKAction (Core)
-+ (instancetype)sequenceActions:(SKAction *)first, ...;
++ (instancetype)sequencedActions:(SKAction *)first, ...;
 @end

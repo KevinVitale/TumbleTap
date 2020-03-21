@@ -45,11 +45,8 @@
     return [[self class] circularShape:10.f position:CGPointZero addPhysics:YES];
 }
 + (instancetype)circularShape:(CGFloat)radius position:(CGPoint)position addPhysics:(BOOL)physics {
-    SKShapeNode *shape = [[self class] new];
-    CGRect shapeRect = CGRectMake(-(radius * .5f) + position.x, -(radius * .5f) + position.y, radius, radius);
-    CGPathRef path = CGPathCreateWithEllipseInRect(shapeRect, NULL);
-    shape.path = path;
-    CGPathRelease(path);
+    SKShapeNode *shape = [SKShapeNode shapeNodeWithCircleOfRadius:radius];
+    shape.position = position;
     if(physics) {
         shape.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:radius];
     }

@@ -15,22 +15,24 @@
 		0A021C1A18384CA900555956 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A021C1618384CA900555956 /* Credits.rtf */; };
 		0A021C1B18384CA900555956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A021C1818384CA900555956 /* InfoPlist.strings */; };
 		0A1354A6185A7D3B00C6E0FC /* TumbleTapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1354A5185A7D3B00C6E0FC /* TumbleTapCore.framework */; };
-		0A1354A7185A7D4400C6E0FC /* TumbleTapCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A1354A5185A7D3B00C6E0FC /* TumbleTapCore.framework */; };
+		0A1354A7185A7D4400C6E0FC /* TumbleTapCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A1354A5185A7D3B00C6E0FC /* TumbleTapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0A1354A9185A820900C6E0FC /* libTumbleTapCore-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1354A8185A820900C6E0FC /* libTumbleTapCore-iOS.a */; };
 		0A1B988318386770001097F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B98811838674B001097F0 /* Images.xcassets */; };
+		0AB06943242593C500706A69 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB06942242593C500706A69 /* MyScene.m */; };
+		0AB06944242593C500706A69 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB06942242593C500706A69 /* MyScene.m */; };
 		0AE6F6A1183883740061D54A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B987F1838674B001097F0 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0A5A6A08183A991A0095F65B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
 				0A1354A7185A7D4400C6E0FC /* TumbleTapCore.framework in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -47,6 +49,8 @@
 		0A1354A8185A820900C6E0FC /* libTumbleTapCore-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libTumbleTapCore-iOS.a"; path = "../TumbleTapCore/build/Debug-iphoneos/libTumbleTapCore-iOS.a"; sourceTree = "<group>"; };
 		0A1B98801838674B001097F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		0A1B98811838674B001097F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "TumbleTap-iOS/Images.xcassets"; sourceTree = "<group>"; };
+		0AB06941242593C500706A69 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		0AB06942242593C500706A69 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				0A021C041838483200555956 /* main.m */,
 				0A021C051838483200555956 /* AppDelegate.h */,
 				0A021C061838483200555956 /* AppDelegate.m */,
+				0AB06941242593C500706A69 /* MyScene.h */,
+				0AB06942242593C500706A69 /* MyScene.m */,
 			);
 			name = "Shared Sources";
 			sourceTree = "<group>";
@@ -189,8 +195,12 @@
 		0A8A67AF18371649007D5165 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 1130;
 				TargetAttributes = {
+					0A021B4B1838172B00555956 = {
+						DevelopmentTeam = J3L2NJGMGJ;
+						ProvisioningStyle = Automatic;
+					};
 					0A021B841838176900555956 = {
 						DevelopmentTeam = J3L2NJGMGJ;
 					};
@@ -198,7 +208,7 @@
 			};
 			buildConfigurationList = 0A8A67B218371649007D5165 /* Build configuration list for PBXProject "TumbleTap" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -242,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB06943242593C500706A69 /* MyScene.m in Sources */,
 				0A021C091838483200555956 /* AppDelegate.m in Sources */,
 				0A021C071838483200555956 /* main.m in Sources */,
 			);
@@ -251,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB06944242593C500706A69 /* MyScene.m in Sources */,
 				0A021C0A1838483200555956 /* AppDelegate.m in Sources */,
 				0A021C081838483200555956 /* main.m in Sources */,
 			);
@@ -311,8 +323,12 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = J3L2NJGMGJ;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -343,7 +359,9 @@
 					"-framework",
 					TumbleTapCore,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -366,9 +384,13 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = J3L2NJGMGJ;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -392,7 +414,9 @@
 					"-framework",
 					TumbleTapCore,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -444,9 +468,10 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "TumbleTap-iOS/TumbleTap-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "91c92a6f-950a-4f3e-a92e-8a9184bf07e3";
 				SDKROOT = iphoneos;
@@ -495,9 +520,10 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "TumbleTap-iOS/TumbleTap-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "91c92a6f-950a-4f3e-a92e-8a9184bf07e3";
 				SDKROOT = iphoneos;
@@ -510,12 +536,66 @@
 		0A8A67B318371649007D5165 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		0A8A67B418371649007D5165 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};
