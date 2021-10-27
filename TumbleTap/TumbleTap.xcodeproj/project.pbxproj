@@ -18,8 +18,8 @@
 		0A1354A7185A7D4400C6E0FC /* TumbleTapCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A1354A5185A7D3B00C6E0FC /* TumbleTapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0A1354A9185A820900C6E0FC /* libTumbleTapCore-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1354A8185A820900C6E0FC /* libTumbleTapCore-iOS.a */; };
 		0A1B988318386770001097F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B98811838674B001097F0 /* Images.xcassets */; };
-		0AB06943242593C500706A69 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB06942242593C500706A69 /* MyScene.m */; };
-		0AB06944242593C500706A69 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB06942242593C500706A69 /* MyScene.m */; };
+		0A4A24F02729192F007BADA2 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB06942242593C500706A69 /* MyScene.m */; };
+		0A4A24F127291938007BADA2 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB06942242593C500706A69 /* MyScene.m */; };
 		0AE6F6A1183883740061D54A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B987F1838674B001097F0 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -203,6 +203,7 @@
 					};
 					0A021B841838176900555956 = {
 						DevelopmentTeam = J3L2NJGMGJ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -252,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB06943242593C500706A69 /* MyScene.m in Sources */,
+				0A4A24F02729192F007BADA2 /* MyScene.m in Sources */,
 				0A021C091838483200555956 /* AppDelegate.m in Sources */,
 				0A021C071838483200555956 /* main.m in Sources */,
 			);
@@ -262,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB06944242593C500706A69 /* MyScene.m in Sources */,
+				0A4A24F127291938007BADA2 /* MyScene.m in Sources */,
 				0A021C0A1838483200555956 /* AppDelegate.m in Sources */,
 				0A021C081838483200555956 /* main.m in Sources */,
 			);
@@ -440,8 +441,10 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -474,6 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "91c92a6f-950a-4f3e-a92e-8a9184bf07e3";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -498,8 +502,10 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,6 +532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "91c92a6f-950a-4f3e-a92e-8a9184bf07e3";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
