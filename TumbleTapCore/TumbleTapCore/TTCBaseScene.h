@@ -21,6 +21,7 @@ typedef void (^TTCInputCallback)(NSSet *, SKEvent *);
 @property (copy, nonatomic) TTCInputCallback inputBeganCallback;
 @property (copy, nonatomic) TTCInputCallback inputDraggedCallback;
 @property (copy, nonatomic) TTCInputCallback inputEndedCallback;
+@property (readonly, nonatomic) CGPoint inputPosition;
 @end
 
 @interface TTCBaseScene (Nodes)
